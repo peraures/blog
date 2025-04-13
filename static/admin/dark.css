@@ -1,0 +1,58 @@
+:root {
+    --text-color: #f8f8f2;
+    --background-color: #272822;
+    --error-color: #bb0064;
+    --keyword-color: #66d9ef;
+    --name-color: #a6e22e;
+    --literal-color: #e6db74;
+  }
+  
+  body,
+  .nc-root,
+  .nc-app,
+  .nc-app-bar {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+  }
+  
+  .nc-entryEditor,
+  .nc-entryEditor-card,
+  .nc-entryEditor-sidebar,
+  .nc-entryEditor-toolbar {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+  }
+  
+  .nc-widgetString input,
+  .nc-widgetText textarea,
+  .nc-widgetSelect select,
+  .nc-widgetObject input,
+  .nc-widgetObject textarea {
+    background-color: #1e1f1c !important;
+    color: var(--text-color) !important;
+    border: 1px solid #444;
+  }
+  
+  .nc-controlPane,
+  .nc-controlPane-topbar,
+  .nc-controlPane-content {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+  }
+  
+  .nc-notification-error {
+    background-color: var(--error-color) !important;
+    color: #fff !important;
+  }
+  
+  .nc-tag {
+    background-color: var(--literal-color);
+    color: #000;
+  }
+  
+  .nc-app .nc-app-main .nc-entryCard {
+    background-color: #1e1f1c !important;
+    color: var(--text-color);
+    border: 1px solid #444;
+  }
+  
