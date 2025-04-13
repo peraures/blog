@@ -26,4 +26,8 @@ collections:
       - { label: "날짜", name: "date", widget: "datetime" }
       - { label: "본문", name: "body", widget: "markdown" }
       - { label: "이미지", name: "image", widget: "image" }
-      - { label: "태그", name: "tags", widget: "list", field: { widget: "string" } }
+      - { label: "태그", name: "tags", widget: "list", field: { name: "tag", widget: "string" } }
+
+
+
+  
