@@ -2,6 +2,9 @@ backend:
   name: github
   repo: peraures/blog
   branch: main
+  base_url: https://peraures.pages.dev
+  auth_endpoint: api/auth
+  app_id: <Ov23li1YZMihZ4ZKYrP3>
 
 media_folder: ""
 public_folder: ""
@@ -12,9 +15,9 @@ collections:
     folder: "content/post"
     create: true
     slug: "{{slug}}"
-    path: "{{slug}}/index"  # index.md로 글이 저장될 거야
-    media_folder: ""         # 이미지 저장 경로
-    public_folder: ""        # CMS가 이미지 경로를 상대적으로 처리할 수 있게
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     fields:
       - { label: "제목", name: "title", widget: "string" }
       - { label: "날짜", name: "date", widget: "datetime" }
