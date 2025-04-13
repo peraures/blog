@@ -1,3 +1,5 @@
+console.log(code)
+
 export async function onRequest(context) {
     if (context.request.method !== "GET") {
       return new Response("Method not allowed", { status: 405 });
