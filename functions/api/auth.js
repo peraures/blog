@@ -1,52 +1,31 @@
 export async function onRequest(context) {
-    if (context.request.method !== "GET") {
-      return new Response("Method not allowed", { status: 405 });
-    }
-  
-    const url = new URL(context.request.url);
-    const code = url.searchParams.get("code");
-  
-    if (!code) {
-      return new Response("Missing code parameter", { status: 400 });
-    }
-  
-    const clientId = context.env.GITHUB_CLIENT_ID;
-    const clientSecret = context.env.GITHUB_CLIENT_SECRET;
-  
+    const {
+        request, // same as existing Worker API
+        env, // same as existing Worker API
+        params, // if filename includes [id] or [[path]]
+        waitUntil, // same as ctx.waitUntil in existing Worker API
+        next, // used for middleware or to fetch assets
+        data, // arbitrary space for passing data between middlewares
+    } = context;
+
+    const client_id = env.GITHUB_CLIENT_ID;
+
     try {
-      const tokenRes = await fetch("https://github.com/login/oauth/access_token", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams({
-          client_id: clientId,
-          client_secret: clientSecret,
-          code,
-        }),
-      });
-  
-      const tokenData = await tokenRes.json();
-  
-      if (tokenData.error) {
-        console.log("GitHub token error:", tokenData);
-        return new Response(JSON.stringify(tokenData), {
-          status: 400,
-          headers: {
-            "Content-Type": "application/json",
-          },
+        const url = new URL(request.url);
+        const redirectUrl = new URL('https://github.com/login/oauth/authorize');
+        redirectUrl.searchParams.set('client_id', client_id);
+        redirectUrl.searchParams.set('redirect_uri', url.origin + '/api/callback');
+        redirectUrl.searchParams.set('scope', 'repo user');
+        redirectUrl.searchParams.set(
+            'state',
+            crypto.getRandomValues(new Uint8Array(12)).join(''),
+        );
+        return Response.redirect(redirectUrl.href, 301);
+
+    } catch (error) {
+        console.error(error);
+        return new Response(error.message, {
+            status: 500,
         });
-      }
-  
-      return new Response(JSON.stringify(tokenData), {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-    } catch (err) {
-      console.error("Unexpected error during token exchange:", err);
-      return new Response("Internal Server Error", { status: 500 });
     }
-  }
-  
+}
