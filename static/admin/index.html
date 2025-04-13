@@ -1,17 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>PerAures Content Manager</title>
-    <script src="https://unpkg.com/decap-cms@^3.6.2/dist/decap-cms.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PerAuras Content Manager</title>
   </head>
   <body>
-    <!-- CMS 컨테이너 -->
-    <div id="cms"></div>
-
-    <script>
-      // Decap CMS를 특정 요소에 초기화
-      CMS.init({ config: '/admin/config.yml' });
-    </script>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <!-- link rel="stylesheet" href="/admin/dark.css" -->
+    <script src="https://unpkg.com/decap-cms@^3.6.2/dist/decap-cms.js"></script>
   </body>
 </html>
