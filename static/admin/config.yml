@@ -30,9 +30,13 @@ collections:
       - 
         label: "카테고리"
         name: "categories"
-        widget: "list"
-        default: []
-        hint: "카테고리를 추가하세요 (예: 음향, 전자음악, 문제)"
+        widget: "relation"
+        collection: "categories_list" # 참조할 컬렉션 이름
+        search_fields: ["title"] # 검색할 필드
+        value_field: "title" # 저장할 값
+        display_fields: ["title"] # 표시할 필드
+        multiple: true # 다중 선택 가능
+        hint: "카테고리를 선택하세요"
       - 
         label: "태그"
         name: "tags"
@@ -41,4 +45,11 @@ collections:
         default: []
       - { label: "본문", name: "body", widget: "markdown" }
 
-     
+  - name: "categories_list" # 카테고리 컬렉션 추가
+    label: "카테고리"
+    folder: "content/categories"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/_index"
+    fields:
+      - { label: "제목", name: "title", widget: "string" }

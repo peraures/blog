@@ -1,7 +1,7 @@
 ---
-title: "Synthesis"
-description: "소리, 음향과 관련된 여러가지 이야기"
-slug: "synthesis"
+title: "Music Production"
+description: "뮤직 프로덕션"
+slug: "mucis production"
 image: "categories_sound.jpg"
 style:
     background: "#DC143C"
