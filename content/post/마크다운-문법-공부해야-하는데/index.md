@@ -5,9 +5,10 @@ description: 매일 미루기만 하다가 인생 다 간다...? 얼른 해야�
 date: 2025-04-15T01:44:00+0900
 categories:
   - Music Production
-  - Sound
+  - Sound Synthesis
 tags:
   - Markdown
+lastmod: 2025-04-15T02:37:00+0900
 ---
 ## 이건 본문 헤더 1번 입니다.
 
