@@ -44,8 +44,6 @@ permalinks:
     post: /p/:slug/
     page: /:slug/
 
-enableGitInfo: true
-
 params:
     timezone: "Asia/Seoul"
 
@@ -60,7 +58,7 @@ params:
         customText: 
 
     dateFormat:
-        published: 2006/01/02
+        published: 2006/01/02 15:00 KST
         lastUpdated: 2006/01/02 15:04 KST
 
     sidebar:
