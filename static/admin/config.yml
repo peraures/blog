@@ -50,7 +50,7 @@ collections:
         widget: "datetime"
         required: false
         default: []
-        format: "YYYY-MM-DDTHH:mmZZ"
+        format: "YYYY-MM-DDTHH:mm:ssZZ"
         hint: "이 필드는 자동으로 현재 날짜와 시간으로 설정됩니다."
 
   - name: "categories_list" # 카테고리 컬렉션 추가
