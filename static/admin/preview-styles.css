@@ -3,54 +3,54 @@
 
 /* 전체 폰트 설정 */
 body {
-  font-family: 'Noto Sans KR', sans-serif;
-  line-height: 1.6;
-  color: #333;
+  font-family: 'Noto Sans KR', sans-serif !important;
+  line-height: 1.6 !important;
+  color: #333 !important;
 }
 
 /* h1 태그 스타일 */
 h1 {
-  font-size: 2em;
-  font-weight: 700;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 10px;
-  background-color: #f5f5f5;
-  color: #222;
+  font-size: 2em !important;
+  font-weight: 700 !important;
+  margin-bottom: 15px !important;
+  border-bottom: 2px solid #ccc !important;
+  padding-bottom: 10px !important;
+  background-color: #f5f5f5 !important;
+  color: #222 !important;
 }
 
 /* h2 태그 스타일 */
 h2 {
-  font-size: 1.75em;
-  font-weight: 700;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-  background-color: #f9f9f9;
-  color: #333;
+  font-size: 1.75em !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+  border-bottom: 1px solid #ccc !important;
+  padding-bottom: 5px !important;
+  background-color: #f9f9f9 !important;
+  color: #333 !important;
 }
 
 /* h3 태그 스타일 */
 h3 {
-  font-size: 1.5em;
-  font-weight: 700;
-  margin-bottom: 8px;
-  color: #444;
-  border-left: 4px solid #ddd;
-  padding-left: 10px;
+  font-size: 1.5em !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+  color: #444 !important;
+  border-left: 4px solid #ddd !important;
+  padding-left: 10px !important;
 }
 
 /* p 태그 스타일 */
 p {
-  margin: 10px 0;
-  padding: 5px;
-  background-color: #f4f4f4;
-  border-left: 3px solid #ddd;
+  margin: 10px 0 !important;
+  padding: 5px !important;
+  background-color: #f4f4f4 !important;
+  border-left: 3px solid #ddd !important;
 }
 
 /* br 태그를 시각적으로 구분 */
 br {
-  display: block;
-  height: 10px;
-  background-color: #eaeaea;
+  display: block !important;
+  height: 10px !important;
+  background-color: #eaeaea !important;
 }
