@@ -1,11 +1,11 @@
 ---
 image: https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTdiaDA3ZXFvNzRwOGNyeTkwcmFhaGRtOGtuY2ZzOXZ0ZHo0bmcwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C14xgLsup8XsY/giphy.gif
-title: 마크다운 문법 공부해야 하는데...
+title: "[실험실] 마크다운 문법 공부해야 하는데?"
 description: 매일 미루기만 하다가 인생 다 간다...? 얼른 해야대 알겠지...? 내일 진격의거인 재밌으려나 ㅎㅎ
-date: 2025-04-15T00:21:00+0900
+date: 2025-04-15T01:44:00+0900
 categories:
-  - Sound
   - Music Production
+  - Sound
 tags:
   - Markdown
 ---
