@@ -1,13 +1,14 @@
 ---
 author: Hugo Authors
-title: Emoji Support! 테스트
-date: 2025-04-14T03:57:00.000Z
+title: Emoji Support!
+date: 2025-04-14T16:02:00.000Z
 description: Guide to emoji usage in Hugo
 categories:
   - Test
 image: the-creative-exchange-d2zvqp3fpro-unsplash.jpg
 tags:
   - emoji
+  - 테스트
 ---
 
 Emoji can be enabled in a Hugo project in a number of ways. 
