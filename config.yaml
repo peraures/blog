@@ -38,7 +38,7 @@ services:
         id:
 
 pagination:
-    pagerSize: 3
+    pagerSize: 6
 
 permalinks:
     post: /p/:slug/
@@ -46,7 +46,7 @@ permalinks:
 
 params:
     timezone: "Asia/Seoul"
-    
+
     mainSections:
         - post
     featuredImageField: image
