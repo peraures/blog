@@ -27,8 +27,11 @@ collections:
       - { label: "날짜", name: "date", widget: "datetime" }
       - { label: "본문", name: "body", widget: "markdown" }
       - { label: "이미지", name: "image", widget: "image" }
-      - { label: "태그", name: "tags", widget: "list", allow_add: "true", field: { label: "태그", name: "tag", widget: "string" } }
-
-
-
-  
+      - 
+        label: "태그"
+        name: "tags"
+        widget: "list"
+        multiple: true
+        default: []
+        fields:
+          - { label: "태그", name: "tag", widget: "string" }
