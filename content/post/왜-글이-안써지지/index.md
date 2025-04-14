@@ -2,7 +2,8 @@
 title: 왜 글이 안써지지
 date: 2025-04-14T19:21:00+0900
 image: https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWw2bjFmdGM3Znh1djAyYjhtY29xbjV2aTB1M3AyNmM5eGEwZWV2YyZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/4w5uRuqb15mO7JTGlI/giphy.gif
-tags: []
+tags:
+  - tag: 테스트
 ---
 ## 왜 그런걸까
 
