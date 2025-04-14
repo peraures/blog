@@ -15,8 +15,6 @@ public_folder: ""
 
 collections:
   - name: "posts"
-    extension: "md"
-    format: "toml" 
     label: "블로그 글"
     folder: "content/post"
     create: true
