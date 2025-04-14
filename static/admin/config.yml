@@ -5,7 +5,7 @@ backend:
   site_domain: https://peraures.pages.dev
   base_url: https://peraures.pages.dev
   auth_endpoint: api/auth
-  format: toml
+
   
   client_id: ${GITHUB_CLIENT_ID}
   client_secret: ${GITHUB_CLIENT_SECRET}
@@ -15,6 +15,7 @@ public_folder: ""
 
 collections:
   - name: "posts"
+    format: toml
     label: "블로그 글"
     folder: "content/post"
     create: true
