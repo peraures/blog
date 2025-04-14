@@ -33,5 +33,3 @@ collections:
         widget: "list"
         multiple: true
         default: []
-        fields:
-          - { label: "태그", name: "tag", widget: "string" }
