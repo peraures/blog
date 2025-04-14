@@ -13,7 +13,7 @@ backend:
 editor:
   preview: true
   preview_styles: 
-    - "/admin/preview-styles.css"
+    - "static/admin/preview-styles.css"
 
 media_folder: ""
 public_folder: ""
