@@ -1,6 +1,6 @@
 ---
 image: https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWVyMzc5NGJhZXpzamd5eHJrMmoxYXR1aDhqZHhhNTl0em11MDVxZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pv9vqIFuUD44TdnR73/giphy.gif
-title: 바깥 세상은 너무 추워 추우면 추어탕 추어탕은 맛있어 이거 제목 몇자까지 쓸 수 있는거지?
+title: 바깥 세상은 너무 추워 추우면 추어탕 추어탕은 맛있어 이거 제목 몇자까지
 description: 추어탕은 월피동에 아주 맛집이 있다 그 맛집은 전설로만 내려오는 이하 생략 하려다가 더 주저리주저리 써봐야지
 date: 2025-04-15T02:27:00+0900
 categories:
