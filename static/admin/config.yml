@@ -10,6 +10,11 @@ backend:
   client_id: ${GITHUB_CLIENT_ID}
   client_secret: ${GITHUB_CLIENT_SECRET}
 
+editor:
+  preview: true
+  preview_styles: 
+    - "/admin/preview-styles.css"
+
 media_folder: ""
 public_folder: ""
 
