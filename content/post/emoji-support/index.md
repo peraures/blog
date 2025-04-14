@@ -1,7 +1,7 @@
 ---
 author: Hugo Authors
 title: Emoji Support!
-date: 2025-04-14T17:54:00.000Z
+date: 2025-04-14T19:35:00+0900
 description: Guide to emoji usage in Hugo
 categories:
   - Test
