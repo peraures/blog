@@ -79,7 +79,7 @@ params:
 
     comments:
         enabled: true
-        provider: remark42
+        provider: giscus
 
         disqusjs:
             shortname:
@@ -100,9 +100,9 @@ params:
             theme:
 
         remark42:
-            host: "peraures.page.dev"
-            site: "peraures"
-            locale: ko
+            host: 
+            site: 
+            locale: 
 
         vssue:
             platform:
@@ -140,13 +140,13 @@ params:
             siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
 
         giscus:
-            repo:
-            repoID:
-            category:
-            categoryID:
-            mapping:
-            lightTheme:
-            darkTheme:
+            repo: peraures/blog
+            repoID: R_kgDOOYwIyg
+            category: Announcements
+            categoryID: DIC_kwDOOYwIys4CpKbL
+            mapping: pathname
+            lightTheme: light
+            darkTheme: dark
             reactionsEnabled: 1
             emitMetadata: 0
 
