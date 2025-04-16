@@ -6,7 +6,7 @@ date: 2025-04-16T22:14:00+0900
 categories:
   - Sound Synthesis
 tags: []
-lastmod: 2025-04-16T22:15:00+0900
+lastmod: 2025-04-16T22:24:00+0900
 ---
 ## 오빠는 풍깍쟁이야
 
