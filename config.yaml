@@ -146,9 +146,10 @@ params:
             categoryID: DIC_kwDOOYwIys4CpKbL
             mapping: pathname
             lightTheme: light
-            darkTheme: dark
+            darkTheme: noborder_dark
             reactionsEnabled: 1
             emitMetadata: 0
+            lang: ko
 
         gitalk:
             owner:
