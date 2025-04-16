@@ -1,8 +1,8 @@
 baseurl: https://peraures.pages.dev
 languageCode: ko
 theme: hugo-theme-stack
-title: PerAures
-copyright: _ PerAures
+title: Sound LAB
+copyright: _PerAures
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -15,11 +15,11 @@ hasCJKLanguage: true
 languages:
     ko:
         languageName: 한국어
-        title: PerAures
+        title: Sound LAB
         weight: 1
         params:
             sidebar:
-                subtitle: Test page. 테스트 페이지입니다.
+                subtitle: Electronic Music, Sound Synthesis, Acoustic Research by PerAures
         
     # en:
     #     languageName: English
