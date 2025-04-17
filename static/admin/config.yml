@@ -20,8 +20,8 @@ collections:
     create: true
     slug: "{{slug}}"
     path: "{{slug}}/index"
-    media_folder: ""
-    public_folder: ""
+    media_folder: "{{slug}}"
+    public_folder: "/post/{{slug}}"
     fields:
       - { label: "이미지", name: "image", widget: "image" }
       - { label: "제목", name: "title", widget: "string"}
@@ -43,7 +43,11 @@ collections:
         widget: "list"
         multiple: true
         default: []
-      - { label: "본문", name: "body", widget: "markdown" }
+      - 
+        label: "본문"
+        name: "body"
+        widget: "markdown"
+        editor_components: ["image"]  # ✅ 이거 추가해야 이미지 업로드 버튼 나옴
       - 
         label: "마지막 수정"
         name: "lastmod"
