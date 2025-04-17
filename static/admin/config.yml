@@ -10,8 +10,8 @@ backend:
   client_id: ${GITHUB_CLIENT_ID}
   client_secret: ${GITHUB_CLIENT_SECRET}
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: ""
+public_folder: ""
 
 collections:
   - name: "posts"
@@ -20,8 +20,8 @@ collections:
     create: true
     slug: "{{slug}}"
     path: "{{slug}}/index"
-    media_folder: "content/post/{{slug}}"
-    public_folder: "/post/{{slug}}"
+    media_folder: ""
+    public_folder: ""
     fields:
       - { label: "이미지", name: "image", widget: "image" }
       - { label: "제목", name: "title", widget: "string"}
@@ -43,12 +43,7 @@ collections:
         widget: "list"
         multiple: true
         default: []
-      - 
-        label: "본문"
-        name: "body"
-        widget: "markdown"
-        media_library: 
-          allow_images: true
+      - { label: "본문", name: "body", widget: "markdown" }
       - 
         label: "마지막 수정"
         name: "lastmod"
