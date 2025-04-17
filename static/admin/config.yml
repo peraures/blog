@@ -43,7 +43,12 @@ collections:
         widget: "list"
         multiple: true
         default: []
-      - { label: "본문", name: "body", widget: "markdown" }
+      - 
+        label: "본문"
+        name: "body"
+        widget: "markdown"
+        media_library: # 본문에 이미지 업로드를 활성화
+          allow_images: true
       - 
         label: "마지막 수정"
         name: "lastmod"
