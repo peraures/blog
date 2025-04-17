@@ -10,8 +10,8 @@ backend:
   client_id: ${GITHUB_CLIENT_ID}
   client_secret: ${GITHUB_CLIENT_SECRET}
 
-media_folder: ""
-public_folder: ""
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "posts"
@@ -20,7 +20,7 @@ collections:
     create: true
     slug: "{{slug}}"
     path: "{{slug}}/index"
-    media_folder: "{{slug}}"
+    media_folder: "content/post/{{slug}}"
     public_folder: "/post/{{slug}}"
     fields:
       - { label: "이미지", name: "image", widget: "image" }
