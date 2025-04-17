@@ -20,8 +20,8 @@ collections:
     create: true
     slug: "{{slug}}"
     path: "{{slug}}/index"
-    media_folder: ""
-    public_folder: ""
+    media_folder: "{{slug}}"
+    public_folder: "/post/{{slug}}"
     fields:
       - { label: "이미지", name: "image", widget: "image" }
       - { label: "제목", name: "title", widget: "string"}
